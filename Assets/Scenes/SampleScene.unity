@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &390110316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3470887589394655666, guid: 61eae7eaefd1c5744b7d3ece7c66c625, type: 3}
+  m_PrefabInstance: {fileID: 7373622786819936445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &508634104
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,6 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac48f55a1a9f9747bf0b82fca91b02c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _width: 20
+  _height: 20
+  _tilePrefab: {fileID: 7373622786819936447}
+  _cameraTransform: {fileID: 519420032}
 --- !u!4 &508634106
 Transform:
   m_ObjectHideFlags: 0
@@ -158,7 +167,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -392,6 +401,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4543836243419500152, guid: 61eae7eaefd1c5744b7d3ece7c66c625, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 8075410274350665052, guid: 61eae7eaefd1c5744b7d3ece7c66c625, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -436,13 +449,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -35259716025254823, guid: 61eae7eaefd1c5744b7d3ece7c66c625, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9013405393178049560, guid: 61eae7eaefd1c5744b7d3ece7c66c625, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7373622786819936448}
     - targetCorrespondingSourceObject: {fileID: 9013405393178049560, guid: 61eae7eaefd1c5744b7d3ece7c66c625, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7373622786819936447}
@@ -464,33 +475,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7360913f94b286644955929b62c0da02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &7373622786819936448
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  _color1: {r: 1, g: 1, b: 1, a: 0}
+  _color2: {r: 0.7283019, g: 0.6857031, b: 0.6857031, a: 0}
+  _spriteRenderer: {fileID: 7373622786819936451}
+  _highLight: {fileID: 390110316}
+--- !u!212 &7373622786819936451 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4543836243419500152, guid: 61eae7eaefd1c5744b7d3ece7c66c625, type: 3}
+  m_PrefabInstance: {fileID: 7373622786819936445}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7373622786819936446}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

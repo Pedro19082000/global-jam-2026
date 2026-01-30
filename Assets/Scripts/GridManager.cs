@@ -27,7 +27,9 @@ public class GridManager : MonoBehaviour
                 var spawnedTile = Instantiate(_tilePrefab, new Vector2(x, y), Quaternion.identity);
                 spawnedTile.name = $"Tile {x} {y}";
 
-       
+                var isDiferent = (x%2 != y%2);
+                spawnedTile.setColor(isDiferent);
+
                 _tiles[new Vector2(x,y)] = spawnedTile;
 
             }

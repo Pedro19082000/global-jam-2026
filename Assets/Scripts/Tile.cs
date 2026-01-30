@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Tile : MonoBehaviour
@@ -7,7 +8,7 @@ public class Tile : MonoBehaviour
     [SerializeField] private GameObject _highLight;
 
 
-    public void setColot(bool isDiferent)
+    public void setColor(bool isDiferent)
     {
         _spriteRenderer.color = isDiferent ? _color1 : _color2;
     }
@@ -21,6 +22,5 @@ public class Tile : MonoBehaviour
     {
         _highLight.SetActive(false);
     }
-
 
 }
