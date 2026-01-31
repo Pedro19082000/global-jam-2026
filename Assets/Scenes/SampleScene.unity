@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac48f55a1a9f9747bf0b82fca91b02c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _width: 20
-  _height: 20
+  _width: 40
+  _height: 22
   _tilePrefab: {fileID: 7373622786819936447}
   _cameraTransform: {fileID: 519420032}
 --- !u!4 &508634106
@@ -278,7 +278,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 11
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -451,6 +451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -35259716025254823, guid: 61eae7eaefd1c5744b7d3ece7c66c625, type: 3}
+    - {fileID: 3253001213746479141, guid: 61eae7eaefd1c5744b7d3ece7c66c625, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -475,8 +476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7360913f94b286644955929b62c0da02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _color1: {r: 1, g: 1, b: 1, a: 0}
-  _color2: {r: 0.7283019, g: 0.6857031, b: 0.6857031, a: 0}
+  _color1: {r: 1, g: 1, b: 1, a: 1}
+  _color2: {r: 0.7283019, g: 0.6857031, b: 0.6857031, a: 1}
   _spriteRenderer: {fileID: 7373622786819936451}
   _highLight: {fileID: 390110316}
 --- !u!212 &7373622786819936451 stripped
